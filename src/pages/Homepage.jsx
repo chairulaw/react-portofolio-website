@@ -104,14 +104,14 @@ const Homepage = () => {
   return (
     <div>
       {/* FIRST SECTION */}
-      <section id="home" className="flex items-center justify-center min-h-screen bg-white px-6">
+      <section id="home" className="flex items-center justify-center min-h-screen sm:-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl w-full">
           {/* Left Section - Text */}
-          <div className="flex flex-col justify-center text-center md:text-left">
+          <div className="flex flex-col justify-center text-center md:text-left pt-32">
             <p className="text-lg font-semibold tracking-wide text-black">
               — HELLO MY NAME IS
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-black mt-2">
+            <h1 className="text-4xl md:text-5xl font-bold text-black ">
               Muhammad Chairul Wibisono
             </h1>
             <p className="mt-4 leading-relaxed text-black">
