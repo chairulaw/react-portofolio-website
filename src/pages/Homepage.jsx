@@ -198,13 +198,15 @@ const Homepage = () => {
 
       {/* CONTACT SECTION */}
       <section id="contact" className="flex flex-col items-center py-10 px-6">
-        
-          <h2 className="text-3xl font-semibold mb-4">Get In Touch With Me</h2>
-          <div className="flex gap-4 py-8 items-center flex-row">
-        <a  href={cvIndo} className="mr-4 border font-medium p-3 rounded-xl border-black hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out " download={"CV Muhammad Chairul Wibisono_Indonesian"}>Indonesian CV</a>
-        <a  href={cvEnglish} className="mr-4 border font-medium p-3 rounded-xl border-black hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out" download={"CV Muhammad Chairul Wibisono_English"}>English CV</a>
-        </div>
-      </section>
+  <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">
+    Get In Touch With Me
+  </h2>
+  <div className="flex gap-4 py-8 items-center flex-row">
+    <a  href={cvIndo} className="mr-4 border font-medium p-3 rounded-xl border-black hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out " download={"CV Muhammad Chairul Wibisono_Indonesian"}>Indonesian CV</a>
+    <a  href={cvEnglish} className="mr-4 border font-medium p-3 rounded-xl border-black hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out" download={"CV Muhammad Chairul Wibisono_English"}>English CV</a>
+  </div>
+</section>
+
     </div>
   );
 };
