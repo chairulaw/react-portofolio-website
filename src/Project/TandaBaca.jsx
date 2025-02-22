@@ -11,13 +11,13 @@ const fadeInUp = {
 
 const TandaBaca = () => {
 
-  useEffect(() => {
-    if (window.innerWidth >= 768) { // Hanya berlaku di desktop (md ke atas)
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-      }, 50); // Delay dikit biar pastiin efeknya kena
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.innerWidth >= 768) { // Hanya berlaku di desktop (md ke atas)
+  //     setTimeout(() => {
+  //       window.scrollTo(0, 0);
+  //     }, 50); // Delay dikit biar pastiin efeknya kena
+  //   }
+  // }, []);
 
   return (
     <motion.div

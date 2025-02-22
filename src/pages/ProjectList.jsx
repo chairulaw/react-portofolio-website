@@ -81,13 +81,13 @@ const fadeInUp = {
 
 const location = useLocation();
 
-useEffect(() => {
-  if (window.innerWidth >= 768) {
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }, 50);
-  }
-}, [location]);
+// useEffect(() => {
+//   if (window.innerWidth >= 768) {
+//     setTimeout(() => {
+//       window.scrollTo({ top: 0, behavior: "smooth" });
+//     }, 50);
+//   }
+// }, [location]);
 
   return (
     <motion.div
