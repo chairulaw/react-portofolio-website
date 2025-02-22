@@ -6,16 +6,15 @@ import { SiTailwindcss, SiAdobephotoshop } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaGithub, FaLinkedin, FaWhatsapp, FaInstagram, FaBehance, FaSpotify } from "react-icons/fa";
 
-const About = () => {
-
-    const contactItems = [
-        { icon: <FaGithub />, href: "https://github.com/chairulaw" },
-        { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/chairulaw/" },
-        { icon: <FaBehance />, href: "https://www.behance.net/chairulaw" },
-        { icon: <FaWhatsapp />, href: "https://wa.me/6282371487329" },
-        { icon: <FaInstagram />, href: "https://www.instagram.com/chairulaw_/" },
-        { icon: <FaSpotify />, href: "https://open.spotify.com/user/h1624rnzwl0v3bw6sjfnbymsh?si=c16f2e948962401e" },
-      ];
+const AboutPages = () => {
+  const contactItems = [
+    { icon: <FaGithub />, href: "https://github.com/chairulaw" },
+    { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/chairulaw/" },
+    { icon: <FaBehance />, href: "https://www.behance.net/chairulaw" },
+    { icon: <FaWhatsapp />, href: "https://wa.me/6282371487329" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/chairulaw_/" },
+    { icon: <FaSpotify />, href: "https://open.spotify.com/user/h1624rnzwl0v3bw6sjfnbymsh?si=c16f2e948962401e" },
+  ];
 
   return (
     <div className="flex justify-center items-center p-6 md:p-28">
@@ -117,4 +116,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default AboutPages

@@ -1,13 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Header from "./component/Header"
 import Homepage from "./pages/Homepage"
-import About from "./pages/About.jsx"
 import PetaniGo from "./Project/PetaniGo.jsx"
 import ProjectList from "./pages/projectList.jsx";
 import TandaBaca from "./Project/TandaBaca.jsx"
 import MrJasa from "./Project/MrJasa.jsx"
 import DisneyClone from "./Project/DisneyClone.jsx"
 import ScrollToTop from "./other/Scroll.jsx"
+import AboutPages from "./pages/AboutPages.jsx";
+
 
 
 function AppContent() {
@@ -18,12 +19,12 @@ function AppContent() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/about" element={<About />} />
           <Route path="/tandabaca" element={<TandaBaca />} />
           <Route path="/projectlist" element={<ProjectList />} />
           <Route path="/petanigo" element={<PetaniGo />} />
           <Route path="/disneyclone" element={<DisneyClone />} />
           <Route path="/mrjasa" element={<MrJasa />} />
+          <Route path="/about" element={<AboutPages />} />
         </Routes>
       </div>
     </div>
