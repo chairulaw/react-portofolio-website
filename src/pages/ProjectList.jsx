@@ -90,7 +90,7 @@ const location = useLocation();
 // }, [location]);
 
   return (
-    <motion.div
+    <div
     id="top"
       initial="hidden"
       whileInView="visible"
@@ -124,7 +124,7 @@ const location = useLocation();
         </a>
       ))}
     </div>
-  </motion.div>
+  </div>
   );
 };
 
