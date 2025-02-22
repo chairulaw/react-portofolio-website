@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Header from "./component/Header"
 import Homepage from "./pages/Homepage"
-import About from "./pages/About.jsx"
+import About from "@/pages/About"
 import PetaniGo from "./Project/PetaniGo.jsx"
 import ProjectList from "./pages/projectList.jsx";
 import TandaBaca from "./Project/TandaBaca.jsx"
