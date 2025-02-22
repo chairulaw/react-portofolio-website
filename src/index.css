@@ -21,6 +21,19 @@
 
 /* Add this to your global CSS file (e.g., index.css or App.css) */
 
+html, body {
+  scroll-behavior: auto !important;
+  transition: background-color 500s ease-in-out;
+  -webkit-transition: background-color 500s ease-in-out;
+  -moz-transition: background-color 500s ease-in-out;
+  -ms-transition: background-color 500s ease-in-out;
+  -o-transition: background-color 500s ease-in-out;
+}
+
+.dark{
+  background-color: gray;
+  color: white; 
+}
 
 .header {
     display: flex;

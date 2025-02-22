@@ -1,212 +1,125 @@
 import {
-  bengkelCover,
-  disneyCloneCover,
-  hmsiProjectCover,
-  petaniGoCover,
   originalProfile,
-  technofestCover,
-  technoshiftCover,
-  webCoffeeShopCover,
   cvEnglish,
-  cvIndo
+  cvIndo,
 } from "../assets/Assets";
-import { FaFigma} from "react-icons/fa";
-import { VscVscode } from "react-icons/vsc";
-import { SiAdobephotoshop } from "react-icons/si";
+import { motion } from "framer-motion";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaWhatsapp,
+  FaInstagram,
+  FaBehance,
+  FaSpotify,
+} from "react-icons/fa";
 
 const Homepage = () => {
-
-  const skillsItems = [
-    {title : "EDUCATION",
-      content : [
-        {text: "2019 - 2022", bold:true},
-        {text: "High School Graduate Majoring in Science"},
-        {text: "Pondok Pesantren Tahfidz / Madrasah Aliyah Agrowisata Shaleha, Jawa Barat ", bold:false},
-        {text: "2022 - current", bold:true},
-        {text: "Bachelor of Computer Science"},
-        {text: "Institut Teknologi Batam, Kepulauan Riau", bold:false},
-      ],
-    },
-    {title : "EXPERIENCE",
-      content : [
-        {text: "2023 - current", bold:true},
-        {text: "Chief of The Media Information"},
-        {text: "Himpunan Mahasiswa Sistem Informasi, Institut Teknologi Batam", bold:false}
-      ],
-    },
-    {title : "TECHNICAL SKILLS",
-      content : [ 
-        {text: "Figma & Photoshop", bold:true}, 
-        {text: "Web Design, Instagram Post, Poster, UI/UX"},
-        {text: "Web Programming", bold:true},
-        {text: "HTML, CSS, Bootstrap, MySQL"},
-      ],
-    },
-    {title : "LANGUAGES",
-      content : [
-        {text: "English (intermediate)", bold:false},
-        {text: "Bahasa Indonesia"},
-      ],
-    },
-    {title : "TOOLS",
-        icons: [<FaFigma key="figma" className="w-10 h-10"/>, 
-        <VscVscode key="vscode" className="w-10 h-10"/>, 
-        <SiAdobephotoshop key="photoshop" className="w-10 h-10"/>
-      ]
-    },
-  ];
-
-  const projectItems = [
-  {
-    href: "https://www.behance.net/gallery/211471711/Technofest-PhotographyPortofolio",
-    cover: technofestCover,
-    title: "TECHNOFEST 2023",
-    description: "Technofest event is being held at the Institute Teknologi Batam. I have joined as a member of the publication and event documentation division."
-  },
-  {
-    href: "https://project-web-chairulaw.vercel.app/",
-    cover: webCoffeeShopCover,
-    title: "TANDA BACA COFFEESHOP",
-    description: "This is the final semester project from my campus that I worked on with a team."
-  },  
-  {
-    href: "https://www.instagram.com/hmsi.iteba",
-    cover: hmsiProjectCover,
-    title: "HMSI INSTAGRAM DESIGNER",
-    description: "Himpunan Mahasiswa Sistem Informasi of Institut Teknologi Batam. I hold the position of Head of Media Information Division."
-  },
-  {
-    href: "https://www.instagram.com/technofest.iteba",
-    cover: technoshiftCover,
-    title: "TECHNOSHIFT 2024",
-    description: "Technoshift event is being held at the Institute Teknologi Batam. I have joined as a member of the publication and event documentation division."
-  },
-  {
-    href: "https://www.behance.net/gallery/210773427/MRJasa-Service-UIIX-Mobile-GSM",
-    cover: bengkelCover,
-    title: "UI/UX Bengkel",
-    description: "Mr. Jasa Service is a group project for a garage service app in the user's fifth semester, featuring service selection, booking options, and user accounts."
-  },
-  {
-    href: "https://tani-youth-eight.vercel.app/",
-    cover: petaniGoCover,
-    title: "PETANI GO WEBSITE",
-    description: "As part of my MSIB Batch 7 journey at Infinite Learning, my team and I developed Petani GO, a platform to help farmers overcome challenges and improve productivity."
-  },
-  {
-    href: "https://react-disney-clone-by-chairulaw.vercel.app/",
-    cover: disneyCloneCover,
-    title: "DISNEY+ CLONE WEBSITE",
-    description: "Just a side project I worked on to revisit my ReactJS and Tailwind CSS skills. I also used the API from themoviedb.org to fetch movie data, allowing users to browse, search, and view details of various films."
-  },
+  const contactItems = [
+    { icon: <FaGithub />, href: "https://github.com/chairulaw" },
+    { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/chairulaw/" },
+    { icon: <FaBehance />, href: "https://www.behance.net/chairulaw" },
+    { icon: <FaWhatsapp />, href: "https://wa.me/6282371487329" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/chairulaw_/" },
+    { icon: <FaSpotify />, href: "https://open.spotify.com/user/h1624rnzwl0v3bw6sjfnbymsh?si=c16f2e948962401e" },
   ];
 
   return (
-    <div>
-      {/* FIRST SECTION */}
-      <section id="home" className="flex items-center justify-center min-h-screen sm:-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl w-full">
-          {/* Left Section - Text */}
-          <div className="flex flex-col pt-32 justify-center text-center md:text-left md:pt-0">
-            <p className="text-lg font-semibold tracking-wide text-black">
-              — HELLO MY NAME IS
-            </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-black ">
-              Muhammad Chairul Wibisono
-            </h1>
-            <p className="mt-4 leading-relaxed text-black">
-              An Information Systems student from Institut Teknologi Batam with
-              experience in university and personal projects. I have a
-              background as a social media designer and front-end developer.
-              Although I do not yet have professional work experience, I am
-              eager to apply my skills and contribute effectively as part of a
-              team.
-            </p>
-          </div>
-
-          {/* Right Section - Image */}
-          <div className="flex items-center justify-center">
-            <div className="rounded-2xl p-2 w-full max-w-sm md:max-w-md">
-              <img
-                src={originalProfile}
-                alt="Muhammad Chairul Wibisono"
-                className="rounded-2xl drop-shadow-2xl shadow-inherit w-full h-auto object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Education & Skills Section */}
-      <section id="skills" className="flex flex-col items-center py-10 px-6 bg-white">
-        <h2 className="text-3xl font-bold text-black mb-8 text-center">
-          Education & Skills
-        </h2>
-      
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full">
-          {skillsItems.map((item, index) => (
-            item.icons ? (
-              <div className="bg-white shadow-md rounded-2xl p-5 border flex flex-col gap-2 text-black hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out mb-1" key={index}>
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                <div className="flex flex-wrap gap-4">{item.icons}</div>
-              </div>
-            ) : (
-              <div className="bg-white shadow-md rounded-2xl p-5 border text-black hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out mb-1" key={index}>
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <ul className="pl-2">
-                  {item.content.map((content, contentIndex) => (
-                    <li key={contentIndex} className={`mb-3 ${content.bold ? "font-semibold" : ""}`}>
-                      {content.text}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )
-          ))}
-        </div>
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="flex flex-col items-center py-10 px-6 ">
-    <h2 className="text-3xl font-bold text-black mb-8 text-center">
-      Projects
-    </h2>
-
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full">
-      {projectItems.map((item, index) => (
-        <a
-          key={index}
-          href={item.href}
-          target="_blank"
-          className="bg-white shadow-md rounded-2xl p-5 border text-black hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out"
+    <div className="flex flex-col items-center justify-center py-12 md:py-48 px-6 md:px-12">
+      {/* Container */}
+      <div className="flex flex-col-reverse md:flex-row items-center max-w-6xl w-full gap-12">
+        {/* Left Section - Text */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col text-center md:text-left md:w-1/2"
         >
-          <img
-            src={item.cover}
-            className="w-full rounded-lg mb-4"
-            alt={item.title}
-          />
-          <h3 className="text-xl font-semibold mb-2">
-            {item.title}
-          </h3>
-          <p className="text-justify">
-            {item.description}
+<motion.p 
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 2, ease: "easeOut" }}
+  className="text-sm sm:text-lg font-semibold tracking-wide text-gray-700 dark:text-gray-400"
+>
+  <motion.span
+    initial={{ opacity: 0, y: -10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 2, delay: 0.1, repeat: Infinity, repeatType: "reverse" }}
+  >—</motion.span>
+  <motion.span
+    initial={{ opacity: 0, y: -10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 2, delay: 0.5, repeat: Infinity, repeatType: "reverse" }}
+  > HELLO,</motion.span>
+  <motion.span
+    initial={{ opacity: 0, y: -10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 2, delay: 0.7, repeat: Infinity, repeatType: "reverse" }}
+  > MY</motion.span>
+  <motion.span
+    initial={{ opacity: 0, y: -10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 2, delay: 0.9, repeat: Infinity, repeatType: "reverse" }}
+  > NAME</motion.span>
+  <motion.span
+    initial={{ opacity: 0, y: -10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 2, delay: 1, repeat: Infinity, repeatType: "reverse" }}
+  > IS</motion.span>
+</motion.p>
+
+          <h1 className="text-3xl sm:text-5xl font-bold mt-2">Muhammad Chairul Wibisono</h1>
+          <p className="mt-4 text-base leading-relaxed">
+            An Information Systems student from Institut Teknologi Batam with experience in university and personal projects.
+            I have a background as a social media designer and front-end developer.
+            Although I do not yet have professional work experience, I am eager to apply my skills and contribute effectively as part of a team.
           </p>
-        </a>
-      ))}
-    </div>
-  </section>
+          <div className="flex flex-col sm:flex-row gap-4 py-6 items-center justify-center md:justify-start">
+            <a
+              href={cvIndo}
+              className="border-2 border-black font-medium text-sm sm:text-base px-5 py-3 rounded-xl  hover:bg-black dark:border-gray-600 dark:hover:bg-gray-200 dark:bg-gray-900 dark:hover:text-black hover:text-white duration-300 ease-in-out w-full sm:w-auto text-center"
+              download="CV Muhammad Chairul Wibisono_Indonesian"
+            >
+              Indonesian CV
+            </a>
+            <a
+              href={cvEnglish}
+              className="border-2 border-black font-medium text-sm sm:text-base px-5 py-3 rounded-xl  hover:bg-black dark:border-gray-600 dark:hover:bg-gray-200 dark:bg-gray-900 dark:hover:text-black hover:text-white duration-300 ease-in-out w-full sm:w-auto text-center"
+              download="CV Muhammad Chairul Wibisono_English"
+            >
+              English CV
+            </a>
+          </div>
+          <div className="flex justify-center md:justify-start gap-4 mb-5 text-4xl">
+            {contactItems.map((item, index) => (
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="hover:-translate-y-2 transition-transform ease-in-out text-gray-700 hover:text-white"
+              >
+                {item.icon}
+              </a>
+            ))}
+          </div>
+        </motion.div>
 
-      {/* CONTACT SECTION */}
-      <section id="contact" className="flex flex-col items-center py-10 px-6">
-  <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center">
-    Get In Touch With Me
-  </h2>
-  <div className="flex gap-4 py-8 items-center flex-row">
-    <a  href={cvIndo} className="mr-4 border font-medium p-3 rounded-xl border-black hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out " download={"CV Muhammad Chairul Wibisono_Indonesian"}>Indonesian CV</a>
-    <a  href={cvEnglish} className="mr-4 border font-medium p-3 rounded-xl border-black hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out" download={"CV Muhammad Chairul Wibisono_English"}>English CV</a>
-  </div>
-</section>
-
+        {/* Right Section - Image */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="md:w-1/2 flex justify-center"
+        >
+          <div className="rounded-2xl drop-shadow-2xl max-w-xs sm:max-w-md md:max-w-lg">
+            <img
+              src={originalProfile}
+              alt="Muhammad Chairul Wibisono"
+              className="rounded-2xl max-w-full object-cover"
+            />
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 };
