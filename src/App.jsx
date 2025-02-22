@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Header from "./component/Header"
 import Homepage from "./pages/Homepage"
-import About from "@/pages/About"
+import About from "./pages/About.jsx"
 import PetaniGo from "./Project/PetaniGo.jsx"
 import ProjectList from "./pages/projectList.jsx";
 import TandaBaca from "./Project/TandaBaca.jsx"
 import MrJasa from "./Project/MrJasa.jsx"
 import DisneyClone from "./Project/DisneyClone.jsx"
-// import ScrollToTop from "./other/Scroll.jsx"
+import ScrollToTop from "./other/Scroll.jsx"
 
 
 function AppContent() {
@@ -15,7 +15,7 @@ function AppContent() {
     <div className="items-center font-body flex flex-col min-h-screen scrollbar-none scroll-smooth bg-white text-black dark:bg-gray-950 dark:text-white">
       <Header />
       <div className="flex-1 w-full px-4">
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
