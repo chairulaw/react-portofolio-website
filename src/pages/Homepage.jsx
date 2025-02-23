@@ -96,7 +96,7 @@ const Homepage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={index}
-                className="hover:-translate-y-2 transition-transform ease-in-out text-gray-700 hover:text-white"
+                className="hover:-translate-y-2 transition-transform ease-in-out text-gray-700 dark:hover:text-gray-400 hover:text-black"
               >
                 {item.icon}
               </a>
