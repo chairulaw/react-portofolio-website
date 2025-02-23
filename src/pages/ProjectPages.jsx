@@ -103,7 +103,7 @@ useEffect(() => {
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full">
       {projectItems.map((item, index) => (
-        <a
+        <Link
           key={index}
           href={item.to}
           className="bg-gray-300 bg-opacity-50 shadow-md rounded-2xl p-5 border dark:text-white dark:bg-gray-900 dark:border-gray-700 dark:hover:bg-gray-700  hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out"
@@ -121,7 +121,7 @@ useEffect(() => {
               {item.icons}
             </div>
           </div>
-        </a>
+        </Link>
       ))}
     </div>
   </motion.div>
