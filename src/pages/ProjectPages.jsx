@@ -45,7 +45,7 @@ const projectItems = [
     icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
   },
   {
-    to: "mrjasa",
+    to: "/mrjasa",
     cover: bengkelCover,
     title: "MR Jasa",
     description:"UI/UX Design",
@@ -59,7 +59,7 @@ const projectItems = [
     icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
   },
   {
-    to: "disneyclone",
+    to: "/disneyclone",
     cover: disneyCloneCover,
     title: "DISNEY+ CLONE WEBSITE",
     description:"Side Project",
@@ -105,7 +105,7 @@ useEffect(() => {
       {projectItems.map((item, index) => (
         <Link
           key={index}
-          href={item.to}
+          to={item.to}
           className="bg-gray-300 bg-opacity-50 shadow-md rounded-2xl p-5 border dark:text-white dark:bg-gray-900 dark:border-gray-700 dark:hover:bg-gray-700  hover:bg-black hover:text-white hover:scale-105 duration-300 ease-in-out"
         >
           <img
