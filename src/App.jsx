@@ -22,7 +22,7 @@ function AppContent() {
           <Route path="/mrjasa" element={<MrJasaPages />} />
           <Route path="/tandabaca" element={<TandaBacaPages />} />
           <Route path="/projectlist" element={<ProjectPages />} />
-          <Route path="petanigo" element={<PetaniGoPages />}/>
+          <Route path="/petanigo" element={<PetaniGoPages />}/>
         </Routes>
       </div>
     </div>
