@@ -8,26 +8,40 @@ import {
     technoshiftCover,
     webCoffeeShopCover,
   } from "../assets/Assets";
-import { MdOutlineArrowOutward } from "react-icons/md";
-import { motion } from "framer-motion";
-import { useEffect } from "react";
+  import { MdOutlineArrowOutward } from "react-icons/md";
+  import { motion } from "framer-motion";
+  import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-  
-const ProjectPages = () => {
 
-const projectItems = [
-  {
-    to: "https://www.behance.net/gallery/211471711/Technofest-PhotographyPortofolio",
-    cover: technofestCover,
-    title: "TECHNOFEST 2023",
-    description:"Photography",
+const ProjectPages = () => {
+  
+  const projectItems = [
+    {
+      to: "/tandabaca",
+      cover: webCoffeeShopCover,
+      title: "TANDA BACA COFFEESHOP",
+      description:"Web Design",
     icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
   },
   {
-    to: "/tandabaca",
-    cover: webCoffeeShopCover,
-    title: "TANDA BACA COFFEESHOP",
-    description:"Web Design",
+    to: "/petanigo/#top",
+    cover: petaniGoCover,
+    title: "PETANI GO WEBSITE",
+    description:"Infinite Learning Batch 7 Final Project",
+    icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
+  },
+  {
+    to: "/disneyclone",
+    cover: disneyCloneCover,
+    title: "DISNEY+ CLONE WEBSITE",
+    description:"Side Project",
+    icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
+  },
+  {
+    to: "/mrjasa",
+    cover: bengkelCover,
+    title: "MR Jasa",
+    description:"UI/UX Design",
     icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
   },
   {
@@ -45,24 +59,10 @@ const projectItems = [
     icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
   },
   {
-    to: "/mrjasa",
-    cover: bengkelCover,
-    title: "MR Jasa",
-    description:"UI/UX Design",
-    icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
-  },
-  {
-    to: "/petanigo/#top",
-    cover: petaniGoCover,
-    title: "PETANI GO WEBSITE",
-    description:"Infinite Learning Batch 7 Final Project",
-    icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
-  },
-  {
-    to: "/disneyclone",
-    cover: disneyCloneCover,
-    title: "DISNEY+ CLONE WEBSITE",
-    description:"Side Project",
+    to: "https://www.behance.net/gallery/211471711/Technofest-PhotographyPortofolio",
+    cover: technofestCover,
+    title: "TECHNOFEST 2023",
+    description:"Photography",
     icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
   },
 ];
