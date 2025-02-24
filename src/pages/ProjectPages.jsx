@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
   
-const ProjectList = () => {
+const ProjectPages = () => {
 
 const projectItems = [
   {
@@ -128,4 +128,4 @@ useEffect(() => {
   );
 };
 
-export default ProjectList;
+export default ProjectPages;

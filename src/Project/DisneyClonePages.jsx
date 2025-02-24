@@ -4,7 +4,7 @@ import { coverDisneyClone, slideDisneyClone1, slideDisneyClone2 } from "../asset
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-const DisneyClone = () => {
+const DisneyClonePages = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -158,4 +158,4 @@ const DisneyClone = () => {
   );
 };
 
-export default DisneyClone;
+export default DisneyClonePages;

@@ -4,7 +4,7 @@ import { petaniGoCover, slidePetaniGo1,slidePetaniGo2,slidePetaniGo3,slidePetani
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-const PetaniGo = () => {
+const PetaniGoPages = () => {
     const fadeInUp = {
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut" } },
@@ -165,4 +165,4 @@ const PetaniGo = () => {
   )
 }
 
-export default PetaniGo
+export default PetaniGoPages

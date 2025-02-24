@@ -4,7 +4,7 @@ import { bengkelCover, slideBengkel1, slideBengkel2, slideBengkel3 } from "../as
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-const MrJasa = () => {
+const MrJasaPages = () => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -143,4 +143,4 @@ const MrJasa = () => {
   );
 };
 
-export default MrJasa;
+export default MrJasaPages;

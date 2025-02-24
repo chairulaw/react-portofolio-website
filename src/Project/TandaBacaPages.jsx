@@ -9,7 +9,7 @@ const fadeInUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut" } },
 };
 
-const TandaBaca = () => {
+const TandaBacaPages = () => {
 
   useEffect(() => {
     if (window.innerWidth >= 768) { // Hanya berlaku di desktop (md ke atas)
@@ -150,4 +150,4 @@ const TandaBaca = () => {
   );
 };
 
-export default TandaBaca;
+export default TandaBacaPages;
