@@ -82,7 +82,7 @@ const PetaniGoPages = () => {
               className="mt-8 group"
             >
               <a
-                href="https://tani-youth-eight.vercel.app/"
+                href="http://petanigo.infinitelearningproject.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative inline-flex items-center text-blue-500 dark:group-hover:text-white group-hover:text-black 
