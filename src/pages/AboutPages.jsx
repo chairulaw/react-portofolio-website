@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { originalProfile } from "../assets/Assets";
+import { lightImg } from "../assets/Assets";
 import { FaFigma, FaHtml5, FaCss3, FaBootstrap, FaReact } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 import { SiTailwindcss, SiAdobephotoshop } from "react-icons/si";
@@ -38,7 +38,7 @@ const AboutPages = () => {
         <div className="flex items-center justify-center">
           <div className="rounded-2xl overflow-hidden w-full h-full shadow-lg dark:bg-gray-900">
             <img
-              src={originalProfile}
+              src={lightImg}
               alt="Profile"
               className="w-full h-full object-cover"
             />

@@ -1,5 +1,5 @@
 import {
-  originalProfile,
+  darkImg,
   cvEnglish,
   cvIndo,
 } from "../assets/Assets";
@@ -113,7 +113,7 @@ const Homepage = () => {
         >
           <div className="rounded-2xl drop-shadow-2xl max-w-xs sm:max-w-md md:max-w-lg">
             <img
-              src={originalProfile}
+              src={darkImg}
               alt="Muhammad Chairul Wibisono"
               className="rounded-2xl max-w-full object-cover"
             />

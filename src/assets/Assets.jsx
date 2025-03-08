@@ -21,6 +21,9 @@ export {default as slideBengkel3} from './img/Slide Bengkel 3.jpg'
 export {default as slideDisneyClone1} from './img/Slide Disney 1.jpg'
 export {default as slideDisneyClone2} from './img/Slide Disney 2.jpg'
 export {default as coverDisneyClone} from './img/Disneyclone Cover Pages.jpg'
+export {default as lightImg} from './img/light.JPG'
+export {default as darkImg} from './img/dark.JPG'
+
 // PDF
 export {default as cvEnglish} from './PDF/CV Muhammad Chairul Wibisono_English.pdf'
 export {default as cvIndo} from './PDF/CV Muhammad Chairul Wibisono_Indonesia.pdf'

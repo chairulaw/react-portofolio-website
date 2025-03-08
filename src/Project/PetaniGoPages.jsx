@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { petaniGoCover, slidePetaniGo1,slidePetaniGo2,slidePetaniGo3,slidePetaniGo4,slidePetaniGo5 } from "../assets/Assets"; // Sesuaikan dengan path yang benar
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+
 
 const PetaniGoPages = () => {
     const fadeInUp = {
@@ -10,13 +10,6 @@ const PetaniGoPages = () => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut" } },
       };
 
-      useEffect(() => {
-        if (window.innerWidth >= 768) { // Hanya berlaku di desktop (md ke atas)
-          setTimeout(() => {
-            window.scrollTo(0, 0);
-          }, 50); // Delay dikit biar pastiin efeknya kena
-        }
-      }, []);
   return (
     <motion.div
           id="top"
