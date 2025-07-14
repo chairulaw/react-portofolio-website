@@ -30,7 +30,7 @@ const AboutPages = () => {
         <div className="md:col-span-2 cursor-pointer p-4 md:p-6 rounded-2xl dark:bg-gray-900 dark:text-white dark:hover:bg-gray-700 bg-white text-black hover:bg-black hover:text-white ease-in-out duration-300 shadow-lg">
           <h2 className="text-lg md:text-xl font-bold mb-3">About</h2>
           <p className="text-md md:text-md font-normal leading-relaxed">
-            Fresh graduate from the Informatics Engineering program at Batam State Polytechnic. Skilled in UI/UX Design and Frontend Web Development. Has one year of experience as a UI/UX Designer intern. Able to work both independently and in a team, diligent in completing tasks, and always strives to deliver the best results in every project undertaken.
+            Student from the Computer Science program at Batam Institute of Technology. Skilled in UI/UX Design and Frontend Web Development. Has one year of experience as a UI/UX Designer intern. Able to work both independently and in a team, diligent in completing tasks, and always strives to deliver the best results in every project undertaken.
           </p>
         </div>
 
