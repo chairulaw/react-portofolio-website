@@ -23,7 +23,11 @@ export {default as slideDisneyClone2} from './img/Slide Disney 2.jpg'
 export {default as coverDisneyClone} from './img/Disneyclone Cover Pages.jpg'
 export {default as lightImg} from './img/light.jpg'
 export {default as darkImg} from './img/dark.jpg'
-
+export {default as himarityCover} from './img/himarity.jpg'
+export {default as slideHimarity1} from './img/himarity 1.png'
+export {default as slideHimarity2} from './img/himarity 2.png'
+export {default as slideHimarity3} from './img/himarity 3.png'
+export {default as slideHimarity4} from './img/himarity 4.png'
 // PDF
 export {default as cvEnglish} from './PDF/CV Muhammad Chairul Wibisono_English.pdf'
 export {default as cvIndo} from './PDF/CV Muhammad Chairul Wibisono_Indonesia.pdf'

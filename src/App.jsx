@@ -8,9 +8,9 @@ import AboutPages from "./pages/AboutPages.jsx";
 import DisneyClonePages from "./Project/DisneyClonePages.jsx";
 import MrJasaPages from "./Project/MrJasaPages.jsx";
 import TandaBacaPages from "./Project/TandaBacaPages.jsx";
-import  ProjectPages from "./pages/ProjectPages.jsx";
+import ProjectPages from "./pages/ProjectPages.jsx";
 import PetaniGoPages from "./Project/PetaniGoPages.jsx";
-
+import HimarityPages from "./Project/himarityPages";
 function AppContent() {
 
   return (
@@ -26,6 +26,7 @@ function AppContent() {
           <Route path="/tandabaca" element={<TandaBacaPages />} />
           <Route path="/projectlist" element={<ProjectPages />} />
           <Route path="/petanigo" element={<PetaniGoPages />}/>
+          <Route path="/himarity" element={<HimarityPages />}/>
         </Routes>
       </div>
     </div>

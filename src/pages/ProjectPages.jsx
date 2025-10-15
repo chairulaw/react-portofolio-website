@@ -7,6 +7,7 @@ import {
     technofestCover,
     technoshiftCover,
     webCoffeeShopCover,
+    himarityCover
   } from "../assets/Assets";
   import { MdOutlineArrowOutward } from "react-icons/md";
   import { motion } from "framer-motion";
@@ -65,6 +66,13 @@ const ProjectPages = () => {
     description:"Photography",
     icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
   },
+  {
+    to: "/himarity",
+    cover: himarityCover,
+    title: "HIMARITY VOL 3",
+    description: "Design Graphic",
+    icons: [<MdOutlineArrowOutward key="arrow" className="w-8 h-8" />],
+  }
 ];
 
 const fadeInUp = {
