@@ -10,7 +10,7 @@ import MrJasaPages from "./Project/MrJasaPages.jsx";
 import TandaBacaPages from "./Project/TandaBacaPages.jsx";
 import ProjectPages from "./pages/ProjectPages.jsx";
 import PetaniGoPages from "./Project/PetaniGoPages.jsx";
-import HimarityPages from "./Project/himarityPages";
+import HimarityPages from "./Project/HimarityPages.jsx";
 function AppContent() {
 
   return (
